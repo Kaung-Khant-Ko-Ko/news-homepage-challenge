@@ -12,6 +12,8 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./style.css" />
+
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
@@ -19,28 +21,54 @@
       <a href="#">
         <img src="./assets/images/logo.svg" alt="Logo" class="logo-image" />
       </a>
-      <ul class="navigation__items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">New</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Popular</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Trending</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Categories</a>
+        </li>
       </ul>
       <button class="navigation__button">
         <img src="./assets/images/icon-menu.svg" alt="Menu icon" />
       </button>
     </nav>
     <aside class="sidebar-container">
-      <button class="sidebar__button">
-        <img src="./assets/images/icon-menu-close.svg" alt="Close menu icon" />
-      </button>
-      <ul class="sidebar__items">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">New</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a href="#">Trending</a></li>
-        <li><a href="#">Categories</a></li>
-      </ul>
+      <div class="sidebar__cover"></div>
+      <div class="sidebar__content">
+        <button class="sidebar__button">
+          <img
+            src="./assets/images/icon-menu-close.svg"
+            alt="Close menu icon"
+          />
+        </button>
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Home</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">New</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Popular</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Trending</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#" class="sidebar__link">Categories</a>
+          </li>
+        </ul>
+      </div>
     </aside>
     <main class="content-container">
       <div class="content__main-content">
@@ -50,14 +78,16 @@
           class="main-content__image"
         />
         <h1 class="main-content__title">The Bright Future of Web 3.0?</h1>
-        <p class="main-content__text">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
-        <button type="button" id="main-btn" class="main-content__button">
-          Read more
-        </button>
+        <div class="main-content__info">
+          <p class="main-content__text">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button type="button" id="main-btn" class="main-content__button">
+            Read more
+          </button>
+        </div>
       </div>
       <div class="content__new-content">
         <h2 class="new-content__heading">New</h2>
@@ -78,7 +108,7 @@
             generation?
           </p>
         </div>
-        <div class="new-content">
+        <div class="new-content new-content--last">
           <h3 class="new-content__title">
             <a href="#"> Is VC Funding Drying Up?</a>
           </h3>
@@ -95,13 +125,15 @@
             alt="Retro PC image"
             class="other-content__image"
           />
-          <h2 class="other-content__number">01</h2>
-          <h3 class="other-content__title">
-            <a href="#">Reviving Retro PCs</a>
-          </h3>
-          <p class="other-content__text">
-            What happens when old PCs are given modern upgrades?
-          </p>
+          <div class="other-content__info">
+            <h2 class="other-content__number">01</h2>
+            <h3 class="other-content__title">
+              <a href="#">Reviving Retro PCs</a>
+            </h3>
+            <p class="other-content__text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
         </div>
         <div class="other-content">
           <img
@@ -109,13 +141,15 @@
             alt="Keys image from a laptop"
             class="other-content__image"
           />
-          <h2 class="other-content__number">02</h2>
-          <h3 class="other-content__title">
-            <a href="#">Top 10 Laptops of 2022</a>
-          </h3>
-          <p class="other-content__text">
-            Our best picks for various needs and budgets.
-          </p>
+          <div class="other-content__info">
+            <h2 class="other-content__number">02</h2>
+            <h3 class="other-content__title">
+              <a href="#">Top 10 Laptops of 2022</a>
+            </h3>
+            <p class="other-content__text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
         </div>
         <div class="other-content">
           <img
@@ -123,13 +157,15 @@
             alt="Game controller image"
             class="other-content__image"
           />
-          <h2 class="other-content__number">03</h2>
-          <h3 class="other-content__title">
-            <a href="#">The Growth of Gaming</a>
-          </h3>
-          <p class="other-content__text">
-            How the pandemic has sparked fresh opportunities.
-          </p>
+          <div class="other-content__info">
+            <h2 class="other-content__number">03</h2>
+            <h3 class="other-content__title">
+              <a href="#">The Growth of Gaming</a>
+            </h3>
+            <p class="other-content__text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
         </div>
       </div>
     </main>
