@@ -21,7 +21,7 @@
       <a href="#">
         <img src="./assets/images/logo.svg" alt="Logo" class="logo-image" />
       </a>
-      <ul class="navigation__list">
+      <ul id="nav-list" class="navigation__list">
         <li class="navigation__item">
           <a href="#" class="navigation__link">Home</a>
         </li>
@@ -38,14 +38,14 @@
           <a href="#" class="navigation__link">Categories</a>
         </li>
       </ul>
-      <button class="navigation__button">
+      <button id="open-btn" class="navigation__button">
         <img src="./assets/images/icon-menu.svg" alt="Menu icon" />
       </button>
     </nav>
-    <aside class="sidebar-container">
+    <aside id="sidebar" class="sidebar-container">
       <div class="sidebar__cover"></div>
       <div class="sidebar__content">
-        <button class="sidebar__button">
+        <button id="close-btn" class="sidebar__button">
           <img
             src="./assets/images/icon-menu-close.svg"
             alt="Close menu icon"
@@ -93,7 +93,7 @@
         <h2 class="new-content__heading">New</h2>
         <div class="new-content">
           <h3 class="new-content__title">
-            <a href="#">Hydrogen VS Electric Cars</a>
+            <a href="#" class="new-content__link">Hydrogen VS Electric Cars</a>
           </h3>
           <p class="new-content__text">
             Will hydrogen-fueled cars ever catch up to EVs?
@@ -101,7 +101,9 @@
         </div>
         <div class="new-content">
           <h3 class="new-content__title">
-            <a href="#">The Downsides of AI Artistry</a>
+            <a href="#" class="new-content__link"
+              >The Downsides of AI Artistry</a
+            >
           </h3>
           <p class="new-content__text">
             What are the possible adverse effects of on-demand AI image
@@ -110,7 +112,7 @@
         </div>
         <div class="new-content new-content--last">
           <h3 class="new-content__title">
-            <a href="#"> Is VC Funding Drying Up?</a>
+            <a href="#" class="new-content__link"> Is VC Funding Drying Up?</a>
           </h3>
           <p class="new-content__text">
             Private funding by VC firms is down 50% YOY. We take a look at what
@@ -128,7 +130,7 @@
           <div class="other-content__info">
             <h2 class="other-content__number">01</h2>
             <h3 class="other-content__title">
-              <a href="#">Reviving Retro PCs</a>
+              <a href="#" class="other-content__link">Reviving Retro PCs</a>
             </h3>
             <p class="other-content__text">
               What happens when old PCs are given modern upgrades?
@@ -144,7 +146,7 @@
           <div class="other-content__info">
             <h2 class="other-content__number">02</h2>
             <h3 class="other-content__title">
-              <a href="#">Top 10 Laptops of 2022</a>
+              <a href="#" class="other-content__link">Top 10 Laptops of 2022</a>
             </h3>
             <p class="other-content__text">
               Our best picks for various needs and budgets.
@@ -160,7 +162,7 @@
           <div class="other-content__info">
             <h2 class="other-content__number">03</h2>
             <h3 class="other-content__title">
-              <a href="#">The Growth of Gaming</a>
+              <a href="#" class="other-content__link">The Growth of Gaming</a>
             </h3>
             <p class="other-content__text">
               How the pandemic has sparked fresh opportunities.
@@ -169,5 +171,7 @@
         </div>
       </div>
     </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
